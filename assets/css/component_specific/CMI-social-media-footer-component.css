@@ -1,0 +1,57 @@
+
+.social-media-footer-padding {
+    padding-right: 0px;
+}
+
+.social-media-footer {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 40px;
+}
+
+.social-media-footer li {
+    display: inline-block;
+    padding: 9px 7.5px;
+}
+
+.social-media-footer li a {
+    text-decoration: none;
+}
+
+/** Social Media Icons **/
+.twitter-footer {
+    width: 22px;
+    height: 22px;
+    text-decoration: none;
+    display: block;
+    background: url("../../img/CMI-WebIcon-Sprite.png") no-repeat scroll -70px -1280px;
+}
+
+.twitter-footer:hover, .twitter-footer:hover {
+    background-position: -220px -1280px;
+}
+
+.facebook-footer {
+    width: 22px;
+    height: 22px;
+    text-decoration: none;
+    display: block;
+    background: url("../../img/CMI-WebIcon-Sprite.png") no-repeat scroll -70px -1220px;
+}
+
+.facebook-footer:hover, .facebook-footer:active {
+    background-position: -220px -1220px;
+}
+
+.youtube-footer {
+    width: 22px;
+    height: 22px;
+    text-decoration: none;
+    display: block;
+    background: url("../../img/CMI-WebIcon-Sprite.png") no-repeat scroll -70px -1340px;
+}
+
+.youtube-footer:hover, .youtube-footer:active {
+    background-position: -220px -1340px;
+}

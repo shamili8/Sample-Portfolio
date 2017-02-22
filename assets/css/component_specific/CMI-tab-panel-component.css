@@ -1,0 +1,193 @@
+
+
+
+/* Tabs container */
+.r-tabs {
+    position: relative;
+
+    background-color: #eeeeee;
+    border: 10px solid #eeeeee;
+}
+
+/* Tab element */
+.r-tabs .r-tabs-nav .r-tabs-tab {
+    position: relative;
+    background-color: #eeeeee;
+    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
+    border-top: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-tab:hover,
+.r-tabs .r-tabs-nav .r-tabs-tab:hover a {
+    background-color: #007C7C;
+    background-image: none;
+    color: #fff;
+}
+
+/* Tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+    font-family: 'Helvetica Neue 75', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #333;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Disabled tab */
+.r-tabs .r-tabs-nav .r-tabs-state-disabled {
+    opacity: 0.5;
+}
+
+/* Active state tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+    color: #000000;
+    text-shadow: none;
+    background-color: white;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-state-active {
+    border-top: 2px solid #007C7C;
+    border-bottom: 2px solid #fff;
+}
+
+/* Tab panel */
+.r-tabs .r-tabs-panel {
+    font-family: 'Helvetica Neue 55', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    background-color: white;
+}
+
+/* Accordion anchor */
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+    display: block;
+    padding: 10px;
+    background-color: #00c5ad;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Active accordion anchor */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+    background-color: #fff;
+    color: #000000;
+}
+
+/* Disabled accordion button */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+    opacity: 0.5;
+}
+
+.r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.r-tabs .r-tabs-panel {
+    padding: 10px;
+    display: none;
+}
+
+.r-tabs .r-tabs-accordion-title {
+    display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block;
+}
+
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 320px) {
+    .r-tabs .r-tabs-nav {
+        display: none;
+    }
+
+    .r-tabs .r-tabs-accordion-title {
+        display: block;
+        border-top: 2px solid #999999;
+    }
+
+    .r-tabs .r-tabs-state-active {
+        border-top: 2px solid #007c7c;
+
+    }
+
+    .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+        background-color: #fff;
+        color: #000000;
+        background-image: none;
+    }
+
+    .r-tabs .r-tabs-panel {
+        border-top: 0;
+        font-family: 'Helvetica Neue 55', Arial, sans-serif;
+        font-weight: 300;
+    }
+
+    .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+        background-color: #eeeeee;
+        background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+        background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+        background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+        background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+        background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
+        font-family: 'Helvetica Neue 65', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        color: #333;
+
+    }
+
+    .r-tabs .r-tabs-state-active .r-tabs-anchor {
+        font-family: 'Helvetica Neue 75', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        color: #000000;
+    }
+
+    .r-tabs .r-tabs-accordion-title .r-tabs-anchor:hover {
+        background-color: #007C7C;
+        background-image: none;
+        color: #fff;
+    }
+
+    .r-tabs-accordion-title a:after {
+        content: "";
+        background-image: url("../../img/icons/toggle-arrow-left-nav.png");
+        background-repeat: no-repeat;
+        float: left;
+        padding-right: 25px;
+        width: 15px;
+        height: 15px;
+        background-position: 0 -15px;
+    }
+
+    .r-tabs-accordion-title a:hover:after {
+        /* symbol for "opening" panels */
+        background-image: url("../../img/icons/toggle-arrow-left-nav-wht.png");
+
+    }
+
+    .r-tabs-accordion-title.r-tabs-state-active a:after {
+        background-position: 0 0px;
+    }
+
+}

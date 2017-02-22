@@ -1,0 +1,138 @@
+
+
+.left-navigation {
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+}
+
+#left-nav {
+    list-style: none;
+    padding: 0 0 0 0;
+    width: 100%;
+    margin-bottom: 0px;
+    curser: pointer;
+}
+
+#left-nav div {
+    font-family: 'Helvetica Neue 65', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    color: #000000;
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+    cursor: pointer;
+}
+
+#left-nav div:first-child {
+    border-top: 0px;
+}
+
+#left-nav div:last-child {
+    border-bottom: 0px;
+}
+
+#left-nav div:after {
+    /* symbol for "opening" panels */
+    content: ""; /*adjust as needed, taken from bootstrap.css */
+    background: url("../../img/CMI-WebIcon-Sprite.png") no-repeat scroll; background-size: 167px 2854px;
+    background-repeat: no-repeat;
+    float: left; /* adjust as needed */
+    padding-right: 25px;
+    width: 17px;
+    height: 17px;
+    background-position: -141px -194px;
+}
+
+#left-nav div:hover:after {
+    /* symbol for "opening" panels */
+    background: url("../../img/CMI-WebIcon-Sprite.png") no-repeat scroll; background-size: 167px 2854px;
+    background-position: -40px -194px;
+}
+
+#left-nav div.open-nav:after {
+    background-position: -140px -194px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+#left-nav div.open-nav:hover:after {
+    background-position: -40px -194px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+#left-nav ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+
+#left-nav ul {
+    display: none;
+}
+
+#left-nav ul li {
+    font-family: 'Helvetica Neue 55', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #333;
+    padding: 10px 10px 10px 35px;
+    border-bottom: 1px solid #fff;
+    background-color: #e2e2e2;
+}
+
+#left-nav a {
+    font-family: 'Helvetica Neue 55', Arial, sans-serif;
+    font-weight: 300;
+    color: #333;
+    text-decoration: none;
+}
+
+#left-nav ul li:hover {
+    /*border-top:1px solid #666;*/
+    border-bottom: 1px solid #666;
+}
+
+#left-nav li div:hover,
+#left-nav ul li.active:hover,
+#left-nav ul li:hover,
+#left-nav ul li:hover a {
+    background-color: #007c7c;
+    text-decoration: none;
+    color: #fff;
+}
+
+#left-nav ul li:active {
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+#left-nav ul li.active {
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+@media (max-width: 320px) {
+    .l-n {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 750px) {
+    .l-n {
+        padding-left: 30px;
+        padding-right: 5px;
+    }
+}

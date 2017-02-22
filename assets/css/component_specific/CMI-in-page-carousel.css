@@ -1,0 +1,73 @@
+
+
+.carousel {
+    background-color: #eeeeee;
+    border-bottom: 2px solid #d02323;
+    border-top: 1px solid #cccccc;
+    margin-bottom: 50px;
+}
+
+.ipc-img {
+    padding: 10px 5px 10px 10px;
+}
+
+.ipc-caption {
+    padding: 10px 10px 10px 5px;
+}
+
+.ipc-caption a {
+    color: #007c7c;
+    border-bottom: 1px solid #cccccc;
+    text-decoration: none;
+}
+
+.ipc-caption a:hover {
+    color: #003333;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 103.5%;
+}
+
+.carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border: 3px solid #999999;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.carousel-indicators .active {
+    height: 15px;
+    width: 15px;
+    background-color: #999999;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.carousel-indicators li:hover {
+    background-color: #d02323;
+    border: 3px solid #d02323;
+}
+
+.carousel-control.left {
+    background: url("../../img/CMI-WebIcon-Sprite.png") no-repeat scroll -22px -191px #ccc;
+    background-size:167px 2854px; 
+    width: 20px;
+    height: 20px;
+    border-radius: 50% !important;
+    top: 103.5%;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.carousel-control.right {
+    background: url("../../img/CMI-WebIcon-Sprite.png") no-repeat scroll -22px -191px #ccc;
+    background-size:167px 2854px; 
+    width: 20px;
+    height: 20px;
+    border-radius: 50% !important;
+    top: 103.5%;
+}
